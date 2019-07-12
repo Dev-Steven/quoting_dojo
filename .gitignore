@@ -1,5 +1,6 @@
 # ignore all listed files
 /node_modules
+package-lock.json
 routes_mod_quoting_dojo.zip
 quoting_dojo.zip
 mod_quoting_dojo.zip
