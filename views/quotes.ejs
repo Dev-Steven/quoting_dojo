@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Here are the awesome quotes!</h1>
+    <% for(var x=all_quotes.length-1; x>=0; x--) { %>
+        <p>"<%= all_quotes[x].quote %>"</p>
+        <p> - <%= all_quotes[x].name%> at <%= all_quotes[x].createdAt.toLocaleString() %></p>
+    <% } %>
+
+    <a href="/">Add a Quote</a>
+
+</body>
+</html>
